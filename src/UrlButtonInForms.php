@@ -1,6 +1,6 @@
 <?php
 
-namespace Seo\UrlButtonInForms;
+namespace Seoegypt\UrlButtonInForms;
 
 use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Fields\SupportsDependentFields;

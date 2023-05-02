@@ -1,6 +1,6 @@
 <?php
 
-namespace Seo\UrlButtonInForms;
+namespace Seoegypt\UrlButtonInForms;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;

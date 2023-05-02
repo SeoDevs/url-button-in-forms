@@ -1,5 +1,5 @@
 {
-    "name": "seo/url-button-in-forms",
+    "name": "seoegypt/url-button-in-forms",
     "description": "A Laravel Nova field.",
     "keywords": [
         "laravel",
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Seo\\UrlButtonInForms\\": "src/"
+            "Seoegypt\\UrlButtonInForms\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Seo\\UrlButtonInForms\\FieldServiceProvider"
+                "Seoegypt\\UrlButtonInForms\\FieldServiceProvider"
             ]
         }
     },
