@@ -1,2 +1,2 @@
 # url-button-in-forms
-add url button to forms in laravel nova
+Add url button for forms in laravel nova
