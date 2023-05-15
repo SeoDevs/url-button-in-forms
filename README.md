@@ -2,7 +2,7 @@
 
 A Url Field Button In Forms for [Laravel Nova](https://nova.laravel.com/).
 
-![Preview 1](https://github.com/SeoDevs/url-button-in-forms/tree/main/docs/preview.png)
+![Preview 1](https://github.com/SeoDevs/url-button-in-forms/main/docs/preview.png)
 
 ## Install
 
