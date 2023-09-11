@@ -2511,6 +2511,12 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     inputUrl: function inputUrl() {
       return this.currentField.url || 'test';
+    },
+    inputTarget: function inputTarget() {
+      return this.currentField.target || '_self';
+    },
+    inputLabel: function inputLabel() {
+      return this.currentField.label || 'Download';
     }
   }
 });
@@ -2623,9 +2629,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "full-width-content": _ctx.fullWidthContent
   }, {
     field: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      var _$props$field$label;
+      var _$options$inputLabel;
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", (0,vue__WEBPACK_IMPORTED_MODULE_0__.mergeProps)({
-        target: $props.field.target,
+        target: $options.inputTarget,
         href: $options.inputUrl
       }, _ctx.extraAttributes, {
         "class": "shadow relative bg-primary-500 hover:bg-primary-400 text-white dark:text-gray-900 cursor-pointer rounded text-sm font-bold focus:outline-none focus:ring ring-primary-200 dark:ring-gray-600 inline-flex items-center justify-center h-9 px-3 shadow relative bg-primary-500 hover:bg-primary-400 text-white dark:text-gray-900",
@@ -2637,7 +2643,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         dusk: $props.field.attribute,
         disabled: _ctx.currentlyIsReadonly,
         maxlength: $props.field.enforceMaxlength ? $props.field.maxlength : -1
-      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)((_$props$field$label = $props.field.label) !== null && _$props$field$label !== void 0 ? _$props$field$label : "Download"), 17 /* TEXT, FULL_PROPS */, _hoisted_2)])];
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)((_$options$inputLabel = $options.inputLabel) !== null && _$options$inputLabel !== void 0 ? _$options$inputLabel : "Download"), 17 /* TEXT, FULL_PROPS */, _hoisted_2)])];
     }),
     _: 1 /* STABLE */
   }, 8 /* PROPS */, ["field", "errors", "show-help-text", "full-width-content"]);

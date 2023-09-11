@@ -7,7 +7,7 @@
   >
     <template #field>
       <div class="space-y-1">
-        <a :target="field.target" :href="inputUrl"
+        <a :target="inputTarget" :href="inputUrl"
             v-bind="extraAttributes"
             class="shadow relative bg-primary-500 hover:bg-primary-400 text-white dark:text-gray-900 cursor-pointer rounded text-sm font-bold focus:outline-none focus:ring ring-primary-200 dark:ring-gray-600 inline-flex items-center justify-center h-9 px-3 shadow relative bg-primary-500 hover:bg-primary-400 text-white dark:text-gray-900"
             @input="handleChange"
@@ -16,7 +16,7 @@
             :dusk="field.attribute"
             :disabled="currentlyIsReadonly"
             :maxlength="field.enforceMaxlength ? field.maxlength : -1">
-            {{ field.label ?? "Download"}}</a>
+            {{ inputLabel ?? "Download"}}</a>
       </div>
     </template>
   </DefaultField>
@@ -32,6 +32,13 @@ import DependentFormField from '../mixins/DependentFormField'
     computed: {
       inputUrl() {
         return this.currentField.url || 'test'
+      },
+
+      inputTarget() {
+        return this.currentField.target || '_self'
+      },
+      inputLabel() {
+        return this.currentField.label || 'Download'
       }
     }
   }
