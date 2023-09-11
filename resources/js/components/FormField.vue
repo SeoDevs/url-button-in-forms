@@ -7,7 +7,7 @@
   >
     <template #field>
       <div class="space-y-1">
-        <a target="_blank" :href="inputUrl"
+        <a :target="field.target" :href="inputUrl"
             v-bind="extraAttributes"
             class="shadow relative bg-primary-500 hover:bg-primary-400 text-white dark:text-gray-900 cursor-pointer rounded text-sm font-bold focus:outline-none focus:ring ring-primary-200 dark:ring-gray-600 inline-flex items-center justify-center h-9 px-3 shadow relative bg-primary-500 hover:bg-primary-400 text-white dark:text-gray-900"
             @input="handleChange"

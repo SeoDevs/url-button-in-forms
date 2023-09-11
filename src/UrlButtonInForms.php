@@ -23,13 +23,32 @@ class UrlButtonInForms extends Field
         $this->url = $url;
         return $this;
     }
+
     public function urlGenerate($url)
     {
          $this->withMeta(['url' => $url]);
          return $this;
     }
+
     public function urlLabel($label="Download"){
         $this->withMeta(['label' => $label]);
         return $this;
+    }
+
+    public function urlTarget($target="_self"){
+        $this->withMeta(['target' => $target]);
+        return $this;
+    }
+
+    public function disable()
+    {
+         $this->withMeta(['disabled' => true]);
+         return $this;
+    }
+
+    public function enable()
+    {
+         $this->withMeta(['disabled' => false]);
+         return $this;
     }
 }
